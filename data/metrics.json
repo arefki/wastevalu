@@ -1,0 +1,123 @@
+{
+  "test_accuracy": 0.9342,
+  "test_n": 836,
+  "per_class": {
+    "cardboard": {
+      "support": 61,
+      "precision": 0.8983,
+      "recall": 0.8689,
+      "f1": 0.8833
+    },
+    "e-waste": {
+      "support": 350,
+      "precision": 0.9884,
+      "recall": 0.9771,
+      "f1": 0.9828
+    },
+    "glass": {
+      "support": 75,
+      "precision": 0.84,
+      "recall": 0.84,
+      "f1": 0.84
+    },
+    "metal": {
+      "support": 61,
+      "precision": 0.8,
+      "recall": 0.8525,
+      "f1": 0.8254
+    },
+    "organic": {
+      "support": 127,
+      "precision": 0.9845,
+      "recall": 1.0,
+      "f1": 0.9922
+    },
+    "paper": {
+      "support": 89,
+      "precision": 0.9318,
+      "recall": 0.9213,
+      "f1": 0.9266
+    },
+    "plastic": {
+      "support": 73,
+      "precision": 0.8378,
+      "recall": 0.8493,
+      "f1": 0.8435
+    }
+  },
+  "confusion_matrix": [
+    [
+      53,
+      1,
+      0,
+      0,
+      0,
+      4,
+      3
+    ],
+    [
+      3,
+      342,
+      1,
+      1,
+      1,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      63,
+      5,
+      0,
+      0,
+      7
+    ],
+    [
+      0,
+      3,
+      3,
+      52,
+      1,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      127,
+      0,
+      0
+    ],
+    [
+      3,
+      0,
+      1,
+      3,
+      0,
+      82,
+      0
+    ],
+    [
+      0,
+      0,
+      7,
+      4,
+      0,
+      0,
+      62
+    ]
+  ],
+  "class_names": [
+    "cardboard",
+    "e-waste",
+    "glass",
+    "metal",
+    "organic",
+    "paper",
+    "plastic"
+  ],
+  "note": "Test set is held out (15% stratified split, seed 42). TrashNet classes are clean studio photos, so real-world phone-photo accuracy will be lower \u2014 see DATA-RESEARCH.md."
+}
